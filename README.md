@@ -1,2 +1,11 @@
-# nextcloud-installer
-Simple nextcloud container, who just install new instance of nextcloud
+# NextCloud installer
+Простой установщик NextCloud
+
+Основан на оригинальном контейнере Nextcloud 19.0.3 (`nextcloud:19.0.3-fpm-alpine`)
+
+Доработан для использования в качестве initContainer в Kubernetes
+
+Внесенные изменения:
+* Основа `install.sh` - `entrypoint.sh` из оригинального контейнера.
+* Убрана проверка аргумента запуска
+* Убран запуск исполняемого файла после установки
