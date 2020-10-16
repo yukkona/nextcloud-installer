@@ -165,3 +165,5 @@ if [ "$installed_version" = "0.0.0.0" ]; then
     fi
   fi
 fi
+
+chown www-data:root -R /var/www/html
